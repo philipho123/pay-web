@@ -1,0 +1,22 @@
+<ehcache>
+	<diskStore path="java.io.tmpdir" />
+	
+	<defaultCache maxElementsInMemory="500" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="120" timeToLiveSeconds="120"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120" />
+	<cache name="systemTypeCache" maxElementsInMemory="500" eternal="true"
+		overflowToDisk="true" />
+	<!-- 
+	<cache name="userCache" maxElementsInMemory="500" eternal="true"
+		overflowToDisk="true" 
+		
+	<cache name="resourceCache" maxElementsInMemory="1000" eternal="true"
+		overflowToDisk="true" />
+
+    data dictionary
+	<cache name="dictionaryCache" maxElementsInMemory="3000" eternal="true"
+		overflowToDisk="true" />
+     data dictionary type
+	<cache name="dictionaryTypeCache" maxElementsInMemory="300"
+		eternal="true" overflowToDisk="true" />-->
+</ehcache>
